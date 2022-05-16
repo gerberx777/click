@@ -1,0 +1,27 @@
+body{
+    top: 0%;
+}
+.base, .basetwo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: darkgray;
+    
+}
+.cards{
+    height: 80px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.btn{
+    border: 0px;
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
