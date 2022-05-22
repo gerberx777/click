@@ -26,8 +26,9 @@ const buttons = document.querySelectorAll('.btn')
 buttons.forEach(elem => elem.addEventListener('click', closefn))
 
 function closefn(e){
-    let out = e.path[1].outerHTML
+    console.log(e.composedPath()[1])
+    let out = e.composedPath()[1].outerHTML
     out = out.replace('<button class="btn">Close</button>',"")
     divtwo.insertAdjacentHTML('afterbegin', out)
-    e.path[1].remove()
+    e.composedPath()[1].remove()
 }
